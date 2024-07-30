@@ -9,19 +9,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 
 
 function App(){
-    return  <div >
-               <ListaDeTareas />
-            </div>
+  return  (
+    <div ><ListaDeTareas /></div>
+  )
 }
 
 
 
 
 root.render(<App />)
-
-
-
-
-
-
-

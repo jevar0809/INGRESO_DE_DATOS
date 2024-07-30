@@ -126,6 +126,9 @@ export function ListaDeTareas(){
   */
   return(
     <>
+
+    <h1>INGRESO DE DATOS</h1>
+
       <ObtenerFormulario traigoDatoInput={agregarTarea} />
 
       {
@@ -139,10 +142,4 @@ export function ListaDeTareas(){
   )
 
 }
-
-
-
-
-
-
 
