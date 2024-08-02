@@ -1,3 +1,26 @@
 1 hacer el index.html, verifique que la ruta del <script> lleve al main.jsx
-2 en main.jsx hacer la raiz, verifique que se renderice algun 'hola mundo'
-3 en el componente gral retorne un h1 con el titulo del proyecto, un input de tipo text y un boton 
+
+2 en main.jsx hacer la raiz. En un componente gral verifique que se renderice algun 'hola mundo'
+
+3 Luego en el componente gral retorne un h1 con el titulo del proyecto, un formulario con un input de tipo text y un boton. Debajo de estos elementos coloque un parrafo. Luego renderice para ver que hayan quedado los elementos en su lugar 
+
+4 Ahora en otro archivo (.jsx) convierta el formulario y el parrafo en componentes y exportelos al main.jsx. Verifique que la ruta del 'import' del main.jsx lo lleve al archivo de los componentes y que se rendericen nuevamente sin novedades.
+
+5 Trabaje con el ingreso de datos. Utilice un 'onChange' para capturar los datos del input y una propiedad 'value' para mostrar los datos. Verifique la captura en un console.log
+
+
+6 una vez tenga la captura del dato, trabaje con el boton usando el evento 'click'. Para sacar el dato capturado del componente donde esta el formulario, se debe usar una prop, es decir que cuando se llame al componente donde esta el formulario se debe enviar una prop, esta debe ser una funcion.
+En la funcion del 'onClick' se llama a la funcion del prop pasandole como argumento los datos capturados, luego se coloca string vacio en el value del input.
+
+Cada vez que se da clic, vea dichos datos en un console.log en la funcion que se paso como prop
+
+
+
+
+
+
+
+
+
+
+
