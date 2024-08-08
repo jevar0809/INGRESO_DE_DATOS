@@ -6,7 +6,7 @@
 
 4 Ahora en otro archivo (.jsx) convierta el formulario y el parrafo en componentes y exportelos al main.jsx. Verifique que la ruta del 'import' del main.jsx lo lleve al archivo de los componentes y que se rendericen nuevamente sin novedades.
 
-5 Trabaje con el ingreso de datos. Utilice un 'onChange' para capturar los datos del input y una propiedad 'value' para mostrar los datos. Verifique la captura en un console.log
+5 Trabaje con el ingreso de datos. Utilice un evento 'onChange' y un useState para capturar los datos del input y una propiedad 'value' para mostrar los datos. Verifique la captura en un console.log
 
 
 6 una vez tenga la captura del dato, trabaje con el boton usando el evento 'click'. Para sacar el dato capturado del componente donde esta el formulario, se debe usar una prop, es decir que cuando se llame al componente donde esta el formulario se debe enviar una prop, esta debe ser una funcion.
@@ -15,12 +15,9 @@ En la funcion del 'onClick' se llama a la funcion del prop pasandole como argume
 Cada vez que se da clic, vea dichos datos en un console.log en la funcion que se paso como prop
 
 
+7 en la funcion que se paso como prop y que trae el dato capturado del formulario haga un array provicional y añada el nuevo dato junto con los datos que ya tiene usando el operador spread. Antes se debe hacer un useState guardando el array final con todos los datos listos para pintarlos con un metodo .map() 
 
 
-
-
-
-
-
+8 como el array con todos los datos almacenados estan en el componente gral, y existe un componente que pinta dichos datos, entonces se deben pasar como un prop para luego retornalos con un .map()
 
 

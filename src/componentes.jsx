@@ -1,4 +1,8 @@
 import { useState } from "react"
+import { v4 as uuidv4 } from 'uuid'
+
+
+
 
 
 export const Formulario = ({traigaDato})=>{
@@ -12,7 +16,7 @@ export const Formulario = ({traigaDato})=>{
 
   const manejoDato = (e)=>{
     e.preventDefault()
-    traigaDato(datosCapturados)
+    datosCapturados? traigaDato(datosCapturados): alert('ingrese un dato')
     setDatosCapturados('')
   }
 
@@ -33,18 +37,7 @@ export const Formulario = ({traigaDato})=>{
 
 
 
+export const DatoIngresado = ({arrayDeDatos}) =>
+  arrayDeDatos.map(dato=><p key={uuidv4()}>{dato}</p>)
 
-
-
-
-
-
-
-
-export const DatoIngresado = () =>{
-  return(
-    <p>dato ingresado</p>
-  )
-}
-
-
+  
